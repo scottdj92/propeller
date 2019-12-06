@@ -1,0 +1,45 @@
+{
+  "name": "propeller",
+  "version": "1.0.0",
+  "description": "A Visual Studio Code extension to view properties inside the workbench",
+  "main": "./out/extension.js",
+  "engines": {
+    "vscode": "^1.34.0"
+  },
+  "activationEvents": [
+    "onCommand:extension.helloWorld"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.helloWorld",
+        "title": "Hello World"
+      }
+    ]
+  },
+  "scripts": {
+    "test": "npm run test",
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "lint": "eslint --ext .ts ./src/",
+    "watch": "tsc -watch -p ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scottdj92/propeller.git"
+  },
+  "author": "Scott Jones",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/scottdj92/propeller/issues"
+  },
+  "homepage": "https://github.com/scottdj92/propeller#readme",
+  "devDependencies": {
+    "@types/node": "^12.12.14",
+    "@types/vscode": "^1.40.0",
+    "@typescript-eslint/eslint-plugin": "^2.10.0",
+    "@typescript-eslint/parser": "^2.10.0",
+    "eslint": "^6.7.2",
+    "typescript": "^3.7.3"
+  }
+}
